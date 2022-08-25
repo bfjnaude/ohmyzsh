@@ -1,6 +1,6 @@
 # purple username
 username() {
-   echo "%{$FG[012]%}%n%{$reset_color%}"
+   echo "%{$FG[012]%}%8>>%n% %<<%{$reset_color%}"
 }
 
 # current directory, two levels deep
