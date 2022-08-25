@@ -1,6 +1,6 @@
 # purple username
 username() {
-   echo "%{$FG[012]%}%8>>%n% %<<%{$reset_color%}"
+   echo "%{$FG[012]%}%8>...>%n% %<<%{$reset_color%}"
 }
 
 # current directory, two levels deep
@@ -35,5 +35,5 @@ ZSH_THEME_GIT_PROMPT_DIRTY="*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # putting it all together
-PROMPT='$(kube_ctx) $(directory)$(git_output) %% '
-RPROMPT='$(current_time)$(return_status)'
+PROMPT='$(username) $(directory)$(git_output) %% '
+RPROMPT='$(kube_ctx) $(current_time)$(return_status)'
