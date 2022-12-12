@@ -15,7 +15,7 @@ git_output() {
 
 # current kubectl context 
 kube_ctx() {
-   echo "%{$FG[004]%}⎈$(kccc)%{$reset_color%}"
+   echo "%{$FG[004]%}*$(kccc)%{$reset_color%}"
 }
 
 # current time with milliseconds
@@ -36,4 +36,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # putting it all together
 PROMPT='$(username) $(directory)$(git_output) %% '
-RPROMPT='$(kube_ctx) $(current_time)$(return_status)'
+RPROMPT='$(kube_ctx) $(current_time)'
